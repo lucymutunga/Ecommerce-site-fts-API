@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/008/976/210/small/clothing-store-logo-design-with-hanger-illustration-vector.jpg"
+        alt="logo"
+      />
+      <div class="links">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="electronics.html"><li>Electronics</li></a>
+          <a href="Women-clothing.html"><li>Women's Clothing</li></a>
+          <a href="men-clothing.html"><li>men's Clothing</li></a>
+          <a href="jewelery.html"><li>Jewelery</li></a>
+        </ul>
+      </div>
+      <div class="details">
+        <div class="cart" onclick="toggleCart()">
+          <i class="fas fa-cart-arrow-down"></i>
+          <small id="cart">0</small>
+        </div>
+        <div class="cart-card">
+          <h3
+            style="
+              color: #41d917;
+              text-align: center;
+              font-size: 16px;
+              border-bottom: 1px solid #000000;
+            "
+          >
+            closetmate_ke Shopping Cart
+          </h3>
+          <div class="box">
+            <div class="content"></div>
+          </div>
+          <div class="total">Total : $19.69/-</div>
+          <a href="#" class="btn">checkout</a>
+        </div>
+
+        <div class="user">
+          <img src="../images/image2.png" alt="user profile" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="frontview">
+      <div class="card-front">
+        <img src="../images/man.png" />
+        <h2>Own Your Looks!!<br />@Closetmate_ke</h2>
+        <img src="../images/image1.png" />
+      </div>
+      <div class="card-back">
+        <h3>Have a taste of quality!!</h3>
+      </div>
+      </div>
+      <h4>Products</h4>
+      <div class="products" id="products"></div>
+      
+    </div>
+
+    <script src="../JS/script.js"></script>
+  </body>
+</html>
