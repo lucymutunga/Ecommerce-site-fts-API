@@ -44,7 +44,10 @@ const updateCart = (product) => {
 function toggleCart() {
   const cartLucy = document.querySelector(".cart-card");
   cartLucy.classList.toggle("open");
+
+  handleAddToCart();
 }
+
 
 function createProductCard(product) {
   const img = document.createElement("img");
@@ -130,6 +133,13 @@ function displayProduct(product) {
     mountProducts();
     products_Container.innerHTML = "";
   });
+  const addToCartButton = document.createElement("button");
+  addToCartButton.innerText = "Add to cart";
+  addToCartButton.addEventListener("click", () => handleAddToCart(product));
+  
+
+
+
 
   // Append the elements to the product container
   products_Container.append(
@@ -137,7 +147,8 @@ function displayProduct(product) {
     productTitle,
     productCategory,
     productPrice,
-    backButton
+    backButton,
+    addToCartButton,
   );
 
   // Replace the products container with the product page
